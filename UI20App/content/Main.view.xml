@@ -1,0 +1,5 @@
+<!-- this is a comment. in the next tag, the xmlns tags define namespaces, the name after of the equality signs being the name of the namespace. In the code below, we can use this name instead of the full path -->
+<mvc:View controllerName="content.Main" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:ux3="sap.ui.ux3">
+    <!-- This is the text that we want to show -->
+<Label text="Hello MVC!!" />
+</mvc:View>
