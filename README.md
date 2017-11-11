@@ -1,0 +1,1 @@
+# In-Memory-Tech_SAP_HANA_020
