@@ -1,8 +1,23 @@
 // the controller for the view Main
 sap.ui.controller("content.Main", {
 	onInit: function () {
-		// this function is called when the view is instantiated.
-		// Used to modify the view before displaying
+		// first, we need to get the shell by its id, so we
+		// can manipulate its content
+		var shell = this.getView().byId("shell");
+		// if there is not content displayed,
+		// show the page of the first navigation item
+		if(shell.getContent().length === 0) {
+			// first, we need to check if there any workitems
+			// defined, otherwise we cannot load anything
+			var worksetItems = shell.getWorksetItems();
+			if(worksetItems.length > 0) {
+				// this line is doing the same thing
+				// as our "normal" navigation
+				shell.setContent(
+					this.getContent(worksetItems[0].getKey())
+				);
+			}
+		}
 	},
 	onExit: function () {
 		// this function is called when the view is destroyed.
