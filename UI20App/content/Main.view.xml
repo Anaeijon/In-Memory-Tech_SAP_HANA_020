@@ -10,7 +10,8 @@
                showLogoutButton="true"
                showSearchTool="false"
                showInspectorTool="false"
-               showFeederTool="false">
+               showFeederTool="false"
+               worksetItemSelected="itemSelected">
         <ux3:headerItems>
             <Label text="GBI_020"
                    tooltip="Username" />
