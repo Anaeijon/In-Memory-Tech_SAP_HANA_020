@@ -1,0 +1,18 @@
+<!-- this is a comment. in the next tag, the xmlns tags define
+namespaces,
+the name after of the equality signs being the name of
+the namespace. In
+the code below, we can use this name instead of
+the full path -->
+<mvc:View controllerName="content.SalesOrders"
+          xmlns="sap.m"
+          xmlns:mvc="sap.ui.core.mvc"
+          xmlns:table="sap.ui.table"
+          xmlns:l="sap.ui.commons.layout"
+          xmlns:html="http://www.w3.org/1999/xhtml">
+    <!-- view content goes here -->
+    <!-- this HTML paragraph is used as a spacer -->
+    <html:p/>
+    <!-- This is the text that we want to show -->
+    <Label text="SalesOrders page" />
+</mvc:View>

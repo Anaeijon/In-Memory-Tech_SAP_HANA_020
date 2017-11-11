@@ -1,5 +1,5 @@
-// the controller for the view Main
-sap.ui.controller("content.Main", {
+sap.ui.controller("content.Overview", {
+	// controller logic goes here
 	onInit: function () {
 		// this function is called when the view is instantiated.
 		// Used to modify the view before displaying
