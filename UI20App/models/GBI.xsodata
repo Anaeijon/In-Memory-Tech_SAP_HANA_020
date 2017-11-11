@@ -1,0 +1,4 @@
+service{
+    "GBI_020"."gbi-student-020::PRODUCT_ATTR_020" as "Products";
+}
+// SAPUI5 or OPENUI5
