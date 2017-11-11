@@ -61,6 +61,12 @@ sap.ui.controller("content.Overview", {
 		// (BT stands for "in between") and the last two
 		// arguments the actual filter values
 		var monthFilter = new sap.ui.model.Filter(
+			"DAY",
+			sap.ui.model.FilterOperator.BT,
+			fromDate.getDay(),
+			toDate.getDay()
+		);
+		var monthFilter = new sap.ui.model.Filter(
 			"MONTH",
 			sap.ui.model.FilterOperator.BT,
 			fromDate.getMonth(),
