@@ -1,12 +1,11 @@
 service{
     "GBI_020"."gbi-student-020::PRODUCT_ATTR_020" as "Products";
     "GBI_020"."gbi-student-020::CUSTOMER_ATTR_020" as "Customers";
-    "GBI_020"."gbi-student-020::SALES_020" as "Sales"
+    "gbi-student-020::SALES_CUBE_CV_020" as "Sales"
         keys generate local "ID"
         aggregates always;
-    "GBI_020"."gbi-student-020::SALES_CUBE_CV_020" as "SalesOrders"
+    "gbi-student-020::SALES_CUBE_CV_020" as "SalesOrders"
         with ("MONTH", "YEAR", "CITY", "NET_REVENUE", "REVENUE")
         keys generate local "ID"
         aggregates always (SUM of "NET_REVENUE", SUM of "REVENUE");
 }
-// SAPUI5 or OPENUI5
